@@ -1,0 +1,18 @@
+{
+  "packageId": "shop.digitalpetroleum.pumpsaathi",
+  "host": "app.digitalpetroleum.shop",
+  "name": "Pump Saathi",
+  "launcherName": "Pump Saathi",
+  "display": "standalone",
+  "themeColor": "#0b5fff",
+  "navigationColor": "#0b5fff",
+  "backgroundColor": "#f4f6fb",
+  "startUrl": "/index.html",
+  "iconUrl": "https://app.digitalpetroleum.shop/icons/icon.svg",
+  "maskableIconUrl": "https://app.digitalpetroleum.shop/icons/icon.svg",
+  "signingKeyInfo": { "path": "./signing.keystore", "alias": "pumpsaathi" },
+  "enableNotifications": false,
+  "appVersionCode": 1,
+  "appVersionName": "1.0.0",
+  "minSdkVersion": 21
+}

@@ -1,0 +1,20 @@
+:root{--p:#0b5fff;--bg:#f4f6fb;--card:#fff;--tx:#14213d;--mut:#6b7280;--ok:#16a34a;--warn:#d97706;--bad:#dc2626;--r:14px;--pad:padding-bottom:env(safe-area-inset-bottom)}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,"Noto Sans Devanagari",sans-serif;background:var(--bg);color:var(--tx);padding-top:env(safe-area-inset-top);padding-bottom:70px;font-size:16px}
+.top{background:var(--p);color:#fff;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:5}
+.brand{font-weight:700;font-size:18px}#who{font-size:13px;opacity:.9}
+main{padding:14px;max-width:820px;margin:auto}
+.card{background:var(--card);border-radius:var(--r);padding:16px;margin-bottom:14px;box-shadow:0 1px 3px rgba(0,0,0,.06)}
+h2{margin:6px 0 12px;font-size:20px}h3{margin:8px 0;font-size:16px}
+label{display:block;font-size:14px;color:var(--mut);margin:10px 0 4px}
+input,select,textarea{width:100%;padding:12px;border:1px solid #d1d5db;border-radius:10px;font-size:16px;background:#fff}
+button{background:var(--p);color:#fff;border:0;border-radius:10px;padding:12px 16px;font-size:16px;cursor:pointer;margin-top:10px;width:100%}
+button.sec{background:#e5e7eb;color:var(--tx)}button.bad{background:var(--bad)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.kpi{display:grid;grid-template-columns:1fr 1fr;gap:10px}.kpi div{background:#eef4ff;border-radius:12px;padding:12px}.kpi b{display:block;font-size:20px}
+table{width:100%;border-collapse:collapse;font-size:14px}td,th{padding:8px;border-bottom:1px solid #eee;text-align:left}
+.tabs{position:fixed;bottom:0;left:0;right:0;display:flex;overflow-x:auto;background:#fff;border-top:1px solid #e5e7eb;padding-bottom:env(safe-area-inset-bottom)}
+.tabs button{flex:0 0 auto;background:none;color:var(--mut);margin:0;padding:10px 14px;font-size:13px;width:auto}
+.tabs button.on{color:var(--p);font-weight:700}
+.lock{opacity:.5}.tag{font-size:11px;padding:2px 6px;border-radius:6px;background:#e5e7eb;margin-left:6px}
+.msg{padding:10px;border-radius:10px;margin-top:8px;font-size:14px}.msg.ok{background:#dcfce7;color:#14532d}.msg.err{background:#fee2e2;color:#7f1d1d}
+@media(max-width:480px){.row{grid-template-columns:1fr}}

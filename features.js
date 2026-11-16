@@ -1,0 +1,62 @@
+// Feature catalog. plan: "free" (Basic 999), "pro" (Pro 2199), "skill:<id>" (AI avatar add-on).
+// status: "built" = working in app.js, "roadmap" = planned, not yet coded.
+const FEATURES = [
+  // ---- FREE (Basic) ----
+  {id:"login",          name:"Email + password login",          plan:"free", module:"auth",      status:"built"},
+  {id:"pump_profile",   name:"Pump profile (naam, address, GST)", plan:"free", module:"settings", status:"built"},
+  {id:"dashboard",      name:"Aaj ka dashboard",                plan:"free", module:"dashboard", status:"built"},
+  {id:"nozzle_entry",   name:"Nozzle reading entry",            plan:"free", module:"shift",     status:"built"},
+  {id:"sale_calc",      name:"Auto sale amount calculation",    plan:"free", module:"shift",     status:"built"},
+  {id:"shift_close",    name:"Shift start / close",             plan:"free", module:"shift",     status:"built"},
+  {id:"cash_tally",     name:"Cash / UPI / card reconciliation", plan:"free", module:"cash",     status:"built"},
+  {id:"cash_short",     name:"Shortage / excess alert",         plan:"free", module:"cash",      status:"built"},
+  {id:"expense_add",    name:"Kharcha entry",                   plan:"free", module:"expense",   status:"built"},
+  {id:"party_add",      name:"Udhaar party add",                plan:"free", module:"party",     status:"built"},
+  {id:"party_ledger",   name:"Party udhaar ledger",             plan:"free", module:"party",     status:"built"},
+  {id:"party_payment",  name:"Party payment receive",           plan:"free", module:"party",     status:"built"},
+  {id:"party_search",   name:"Party search",                    plan:"free", module:"party",     status:"built"},
+  {id:"daily_report",   name:"Daily Sales Report (DSR)",        plan:"free", module:"reports",   status:"built"},
+  {id:"csv_export",     name:"CSV export (sales, cash, udhaar)", plan:"free", module:"reports",  status:"built"},
+  {id:"print_slip",     name:"Print sale slip",                 plan:"free", module:"shift",     status:"built"},
+  {id:"offline_mode",   name:"Offline kaam (PWA cache)",        plan:"free", module:"core",      status:"built"},
+  {id:"install_app",    name:"Phone par app install (PWA)",     plan:"free", module:"core",      status:"built"},
+  {id:"backup_export",  name:"Data backup (JSON download)",     plan:"free", module:"settings",  status:"built"},
+  {id:"backup_import",  name:"Data restore (JSON upload)",      plan:"free", module:"settings",  status:"built"},
+  {id:"staff_add",      name:"Salesman login add",              plan:"free", module:"staff",     status:"built"},
+  {id:"staff_list",     name:"Staff list",                      plan:"free", module:"staff",     status:"built"},
+  {id:"chat_support",   name:"24/7 chat support (link)",        plan:"free", module:"support",   status:"built"},
+  {id:"pwd_change",     name:"Password change",                 plan:"free", module:"auth",      status:"built"},
+  {id:"logout",         name:"Logout",                          plan:"free", module:"auth",      status:"built"},
+  {id:"tank_dip",       name:"Tank dip entry (basic)",          plan:"free", module:"tank",      status:"built"},
+  {id:"tank_list",      name:"Tank dip history",                plan:"free", module:"tank",      status:"built"},
+  {id:"lubes_sale",     name:"Lubricant sale entry",            plan:"free", module:"shift",     status:"built"},
+  {id:"monthly_summary",name:"Monthly summary",                 plan:"free", module:"reports",   status:"built"},
+  {id:"search_global",  name:"Global search",                   plan:"free", module:"core",      status:"built"},
+  {id:"fssai_gst_show", name:"GST / FSSAI details on slip",     plan:"free", module:"settings",  status:"built"},
+  // ---- PRO (2199) ----
+  {id:"rate_request",   name:"Rate change request",             plan:"pro",  module:"rates",     status:"built"},
+  {id:"rate_approve",   name:"Owner rate approval",             plan:"pro",  module:"rates",     status:"built"},
+  {id:"rate_history",   name:"Rate history",                    plan:"pro",  module:"rates",     status:"built"},
+  {id:"tank_variance",  name:"Tank stock variance (dip vs sale)", plan:"pro", module:"tank",     status:"built"},
+  {id:"audit_log",      name:"Audit log (kisne kya badla)",     plan:"pro",  module:"settings",  status:"built"},
+  {id:"role_perms",     name:"Role-wise permissions",           plan:"pro",  module:"staff",     status:"built"},
+  {id:"day_lock",       name:"Day lock",                        plan:"pro",  module:"cash",      status:"built"},
+  {id:"tally_xml",      name:"Tally XML export",                plan:"pro",  module:"reports",   status:"roadmap"},
+  {id:"multi_pump",     name:"Multi-pump switch",               plan:"pro",  module:"core",      status:"roadmap"},
+  {id:"pinelabs_sync",  name:"Pine Labs payment sync",          plan:"pro",  module:"payments",  status:"roadmap"},
+  {id:"party_portal",   name:"Party portal (6-digit code)",     plan:"pro",  module:"party",     status:"roadmap"},
+  {id:"churn_list",     name:"Regular party churn list",        plan:"pro",  module:"party",     status:"built"},
+  // ---- SKILL ADD-ONS (examples; each avatar = skill:<id>) ----
+  {id:"sk_shortage",    name:"Shortage controller (Rajesh)",    plan:"skill:rajesh", module:"skills", status:"roadmap"},
+  {id:"sk_udhaar",      name:"Udhaar recovery (Priya)",         plan:"skill:priya",  module:"skills", status:"roadmap"},
+  {id:"sk_gst",         name:"Daily GST & Tally (Vikram)",      plan:"skill:vikram", module:"skills", status:"roadmap"},
+  {id:"sk_whatsapp",    name:"WhatsApp promos (Aarav)",         plan:"skill:aarav",  module:"skills", status:"roadmap"},
+  {id:"sk_retention",   name:"Customer retention (Mia)",        plan:"skill:mia",    module:"skills", status:"roadmap"}
+];
+const AVATARS = [
+  {id:"rajesh", name:"Rajesh Sharma", role:"Shift & Shortage Controller", price:49},
+  {id:"priya",  name:"Priya Verma",   role:"Udhaar Recovery", price:99},
+  {id:"vikram", name:"CA Vikram Mehta", role:"Daily GST & Tally", price:79},
+  {id:"aarav",  name:"Aarav Joshi",   role:"WhatsApp & Festival Promos", price:49},
+  {id:"mia",    name:"Mia Anderson",  role:"Customer Retention", price:199}
+];

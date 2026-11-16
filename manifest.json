@@ -1,0 +1,13 @@
+{
+  "name": "Pump Saathi",
+  "short_name": "Pump Saathi",
+  "description": "Petrol pump management: shifts, cash, udhaar, stock, reports",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f4f6fb",
+  "theme_color": "#0b5fff",
+  "lang": "hi",
+  "icons": [{"src":"icons/icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
